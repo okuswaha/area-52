@@ -1,0 +1,502 @@
+  454  ls
+  455  cd Applications/
+  456  ls
+  457  cd ..
+  458  ls
+  459  cd Downloads/
+  460  ls
+  461  find -name "mong"
+  462  find -name "mong" .
+  463  find . -name "mong"
+  464  ls
+  465  ls | grep mon
+  466  echo $PATH
+  467  ls /usr/local/bin/
+  468  pwd
+  469  cd mongodb-osx-
+  470  ls
+  471  ls
+  472  ls
+  473  nvm -v
+  474  node
+  475  pwd
+  476  node -v
+  477  yo
+  478  yo hyperledger-composer:businessnetwork
+  479  ls
+  480  ls pershable-network/
+  481  cd pershable-network/
+  482  docker images
+  483  compser -v
+  484  composer -v
+  485  composer card list
+  486  cd ~/.composer/
+  487  ls
+  488  cd cards/
+  489  ls
+  490  cd PeerAdmin\@hlfv1/
+  491  ls
+  492  cat connection.json 
+  493  json connection.json 
+  494  ls
+  495  cd credentials/
+  496  ls
+  497  cd ..
+  498  ls
+  499  cat metadata.json 
+  500  exit
+  501  cd ~/.composer/
+  502  ls
+  503  cd cards/
+  504  ls
+  505  pwd
+  506  ls
+  507  command -v nvm
+  508  history | grep "rest"
+  509  pwd
+  510  cd ..
+  511  ls
+  512  ls
+  513  cd /Users/kuswaha/
+  514  ls
+  515  cd hyperledger/
+  516  ls
+  517  mkdir area-52-network
+  518  ls
+  519  cd ..
+  520  pwd
+  521  ls
+  522  cd hyperledger/
+  523  ls
+  524  mkdir area-52
+  525  cd area-52
+  526  ls
+  527  pwd
+  528  git init
+  529  echo "#area-52" >> README.md
+  530  git status
+  531  git add .
+  532  git status
+  533  git commit -m "initial commit"
+  534  git remote add origin https://github.com/okuswaha/area-52.git
+  535  git push -u origin master
+  536  git push
+  537  git push --set-upstream origin master
+  538  ls
+  539  pwd
+  540  mv -r ../perishable-network/ ./area-52-network/ 
+  541  cp -r ../perishable-network/ ./area-52-network/ 
+  542  ls
+  543  cd area-52-network/
+  544  ls
+  545  ls
+  546  ls
+  547  npm install
+  548  npm install
+  549  composer archive create  --sourceType dir --sourceName . -a ./dist/area-52-network.bna
+  550  ls
+  551  mkdir dist
+  552  ls
+  553  composer archive create  --sourceType dir --sourceName . -a ./dist/area-52-network.bna
+  554  composer archive create  --sourceType dir --sourceName . -a ./dist/area-52-network.bna
+  555  composer archive create  --sourceType dir --sourceName . -a ./dist/area-52-network.bna
+  556  composer archive create  --sourceType dir --sourceName . -a ./dist/area-52-network.bna
+  557  composer archive create  --sourceType dir --sourceName . -a ./dist/area-52-network.bna
+  558  composer archive create  --sourceType dir --sourceName . -a ./dist/area-52-network.bna
+  559  npm install
+  560  npm install
+  561  git status
+  562  ls
+  563  npm install
+  564  cat /Users/kuswaha/.npm/_logs/2018-10-27T06_14_00_624Z-debug.log
+  565  ls
+  566  cd ..
+  567  ls
+  568  cd ..
+  569  ls
+  570  cd perishable-network/
+  571  npm install
+  572  ls
+  573  cd ..
+  574  ls
+  575  cp -r perishable-network/ ./area-52/area-52-network/
+  576  ls
+  577  cd area-52-network/
+  578  ls
+  579  clear
+  580  ls
+  581  pwd
+  582  cd ..
+  583  ls
+  584  rm area-52-network/
+  585  rm -r area-52-network/
+  586  ls
+  587  cd area-52/
+  588  ls
+  589  cd area-52-network/
+  590  ls
+  591  pwd
+  592  ls
+  593  cd ..
+  594  ls
+  595  pwd
+  596  cp -r ../perishable-network/ .
+  597  ls
+  598  ls
+  599  cd ..
+  600  ls
+  601  pwd
+  602  cd area-52/
+  603  ls
+  604  mv ../perishable-network/ ./perishable-network
+  605  ls
+  606  cd perishable-network/
+  607  ls
+  608  cd ..
+  609  ls
+  610  git status
+  611  cd ..
+  612  ls
+  613  cd area-52/
+  614  ls
+  615  ls -al
+  616  cd ..
+  617  ls
+  618  cd area-52/
+  619  ls
+  620  rm -r .
+  621  rm pwd
+  622  pwd
+  623  cd ..
+  624  ls
+  625  cd composer-sample-networks/
+  626  ls
+  627  cd package
+  628  ls
+  629  cd packages
+  630  ls
+  631  cp -r perishable-network/ ../../area-52/perishable-network/
+  632  ls ../../area-52/perishable-network/
+  633  ls
+  634  cd ..
+  635  ls
+  636  cd ..
+  637  ls
+  638  cd area-52/
+  639  ls
+  640  per
+  641  cd perishable-network/
+  642  npm install
+  643  npm audit fix
+  644  git status
+  645  ls
+  646  cd ..
+  647  ls
+  648  rm -r area-52-network/
+  649  ls
+  650  git status
+  651  git add .
+  652  git status
+  653* git commit -m "adding a
+  654  git oush
+  655  git push
+  656  ls
+  657  cd perishable-network/
+  658  npm install 
+  659  npm install 
+  660  npm install 
+  661  composer archive create  --sourceType dir --sourceName . -a ./dist/perishable-network.bna`
+;
+exit
+  662  npm install 
+  663  composer archive create  --sourceType dir --sourceName . -a ./dist/perishable-network.bna
+  664  composer archive create  --sourceType dir --sourceName . -a ./dist/perishable-network.bna
+  665  composer archive create  --sourceType dir --sourceName . -a ./dist/perishable-network.bna
+  666  composer archive create  --sourceType dir --sourceName . -a ./dist/perishable-network.bna
+  667  docker images
+  668  composer archive create  --sourceType dir --sourceName . -a ./dist/perishable-network.bna
+  669  composer archive create  --sourceType dir --sourceName . -a ./dist/perishable-network.bna
+  670  ls
+  671  pwd
+  672  cd ..
+  673  git status
+  674  git add .
+  675  git status
+  676  git status
+  677  git commit -m "adding participants and asset"
+  678  ls
+  679  cd ..
+  680  pwd
+  681  cd fabric-tools/
+  682  ls
+  683  ./startFabric.sh 
+  684  ls
+  685  pwd
+  686  pwd
+  687  ls
+  688  history 
+  689  history | grep rest
+  690  ls
+  691  cd ..
+  692  ls
+  693  cd area-52/
+  694  ls
+  695  cd perishable-network/
+  696  composer-rest-server
+  697  composer-rest-server
+  698  pwd
+  699  cd /Users/kuswaha/.composer/cards
+  700  ls
+  701  cd /Users/kuswaha/
+  702  cd hyperledger/
+  703  ls
+  704  ls
+  705  cd area-52/
+  706  ls
+  707  cd perishable-network/
+  708  ls
+  709  composer-rest-server
+  710  composer-rest-server
+  711  composer network install -a dist/perishable-network.bna -c PeerAdmin@hlfv1
+  712  composer network start --networkName area52-perishable-network -v 0.1.12 -A admin -Sadminpw -c PeerAdmin@hlfv1 --file networkadmin.card 
+  713  composer-rest-server
+  714  ls
+  715  cd ..
+  716  ls
+  717  cd ..
+  718  ls
+  719  composer network
+  720  composer network list
+  721  composer network card list
+  722  composer network
+  723* 
+  724  composer network list PeerAdmin@hlfv1
+  725  composer --help
+  726  composer network install -a dist/area52-perishable-network.bna -c PeerAdmin@hlfv1
+  727  composer archive create  --sourceType dir --sourceName . -a ./dist/perishable-network.bna
+  728  pwd
+  729  cd area-52/
+  730  ls
+  731  cd perishable-network/
+  732  ls
+  733  composer archive create  --sourceType dir --sourceName . -a ./dist/area52-perishable-network.bna
+  734  compser archive --help
+  735  composer archive --help
+  736  composer archive list
+  737  composer archive list -a
+  738  composer archive list -a ./dist/perishable-network.bna 
+  739  composer archive list -a ./dist/perishable-network.bna 
+  740  composer archive list -a ./dist/area52-perishable-network.bna 
+  741  composer network install -a dist/area52-perishable-network.bna -c PeerAdmin@hlfv1
+  742  composer network --help
+  743  composer network ping --help
+  744  composer network ping -c PeerAdmin@hlfv1
+  745  find / -name "networkadmin.card"
+  746  find /User/kuswaha -name "networkadmin.card"
+  747  find /Users/kuswaha -name "networkadmin.card"
+  748  composer network ping -c PeerAdmin@hlfv1
+  749  composer archive list -a ./dist/area52-perishable-network.bna 
+  750  composer archive list -a ./dist/perishable-network.bna 
+  751  composer network start --networkName perishable-network -c PeerAdmin@hlfv1
+  752  composer network start --networkName perishable-network -c PeerAdmin@hlfv1 -v 0.2.6 -A admin -S adminpw --file networkadmin.card
+  753  composer network ping perishable-network
+  754  composer network ping -c networkadmin.card
+  755  ls
+  756  composer network start --networkName perishable-network -c PeerAdmin@hlfv1 -v 0.2.6 -A admin -S adminpw --file networkadmin.card
+  757  ls
+  758  composer network start --networkName perishable-network -c PeerAdmin@hlfv1 -v 0.2.6 -A admin -S adminpw --file networkadmin.card -h
+  759  composer network start --networkName perishable-network -c PeerAdmin@hlfv1 -v 0.2.6 -A admin -S adminpw --file networkadmin.card -?
+  760  composer network start --networkName perishable-network -c PeerAdmin@hlfv1 -v 0.2.6 -A admin -S adminpw --file networkadmin.card --help
+  761  composer network start --networkName perishable-network -c PeerAdmin@hlfv1 -v 0.2.6 -A admin -S adminpw --file networkadmin.card -l DEBUG
+  762  composer network start --networkName perishable-network -c PeerAdmin@hlfv1 -A admin -S adminpw --file networkadmin.card -l DEBUG
+  763* composer network start --networkName perishable-network -c PeerAdmin@hlfv1 -A admin -S adminpw --file networkadmin.card -l DEBUG -V 0.2.6
+  764  composer network ping -c networkadmin.card 
+  765  ls
+  766  composer network ping --help
+  767  composer network ping -c networkadmin.card 
+  768  ls
+  769  composer-rest-server
+  770  composer-rest-server --help
+  771  composer-rest-server
+  772  ls /Users/kuswaha/.composer/cards/
+  773  composer card list
+  774  echo $FABRIC_VERSION
+  775  echo $fabric version
+  776  echo fabric version
+  777  ls
+  778  composer card list -c networkadmin.card 
+  779  composer card --help
+  780  composer card list -c networkadmin.card 
+  781  composer card import --help
+  782  ls
+  783  composer card import -f networkadmin.card
+  784  composer card list --help
+  785  composer card list -c admin@perishable-network
+  786  composer card list
+  787  composer network install --archiveFile ./dist/area52-perishable-network.bna --card admin@perishable-network
+  788* composer network install --archiveFile ./dist/area52-perishable-network.bna --card PeerAdmin@hlfv1p
+  789  ls
+  790  composer-rest-server
+  791  composer-playground
+  792  npm install -g composer-playground
+  793  ls
+  794  composer-playground
+  795  composer card list
+  796  ls
+  797  pwd
+  798  cd ..
+  799  cd ..
+  800  ls
+  801  ls
+  802  pwd
+  803  ls
+  804  cd fabric-tools/
+  805  ls
+  806  ./stopFabric.sh 
+  807  ./startFabric.sh 
+  808  composer-playground 
+  809  ls
+  810  pwd
+  811  cd ..
+  812  ls
+  813  cd area-52/
+  814  ls
+  815  cd perishable-network/
+  816  ls
+  817  cd ..
+  818  cd ..
+  819  ls
+  820  cd fabric-tools/
+  821  ./createPeerAdminCard.sh 
+  822  composer network lsit
+  823  composer network list
+  824  composer network list -c PeerAdmin@hlfv1
+  825  composer card lsit
+  826  composer card list
+  827  ls
+  828  cd ..
+  829  ls
+  830  cd area-52/
+  831  ls
+  832  cd perishable-network/
+  833  composer runtime install -c PeerAdmin@hlfv1 -n area52-perishable-network
+  834  composer-rest-server -v
+  835  composer-rest-server
+  836  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+  837  nvm --version
+  838  nvm -v
+  839  composer runtime
+  840  ls
+  841  composer network list
+  842  composer network list -c admin@perishable-network
+  843  composer network --help
+  844  composer network lsit
+  845  composer network list
+  846  composer network list -r
+  847  composer network list -v
+  848  pwd
+  849  history | grep network
+  850  composer network install --archiveFile ./dist/area52-perishable-network.bna --card admin@perishable-network
+  851  cd ..
+  852  ls
+  853  cd ..
+  854  cd ..
+  855  ls
+  856  cd hyperledger/
+  857  ls
+  858  cd fabric-tools/
+  859  ./teardown
+  860  ls
+  861  ./teardownFabric.sh 
+  862  ./startFabric.sh 
+  863  ls
+  864  cd ..
+  865  ls
+  866  cd area-52/
+  867  ls
+  868  cd perishable-network/
+  869* composer network install --archiveFile ./dist/perishable-network.bna --ca 
+  870  docker ps
+  871  docker ps -aq
+  872  docker kill $(docker ps -aq)
+  873  docker rm $(docker ps -aq)
+  874  docker images
+  875  ls
+  876  cd ..
+  877  cd ..
+  878  ls
+  879  cd fabric-tools/
+  880  ./teardownAllDocker.sh 
+  881  ./startFabric.sh --dev
+  882  composer network list
+  883  cd ..
+  884  ls
+  885  cd area-52/
+  886  ls
+  887  cd perishable-network/
+  888  ls
+  889  composer card list
+  890  composer card --help
+  891  composer card delete admin@perishable-network
+  892  composer card delete -c admin@perishable-network
+  893  composer card lsit
+  894  composer card list
+  895  composer card delete -c PeerAdmin@hlfv1
+  896  composer card list
+  897  cd ..
+  898  ld
+  899  cd ..
+  900  cd ..
+  901  ls
+  902  cd hyperledger/
+  903  ls
+  904  cd fabric-tools/
+  905  ls
+  906  cd fabric-scripts/
+  907  ls
+  908  cd hlfv11/
+  909  ls
+  910  ./createPeerAdminCard.sh 
+  911  cd ..
+  912  cd ..
+  913  ls
+  914  cd ..
+  915  cd area-52/
+  916  cd perishable-network/
+  917  ls
+  918  rm networkadmin.card 
+  919  ls
+  920  ls
+  921  ls dist/
+  922  history | grep arcv
+  923  history | grep arch
+  924  composer network install --archiveFile ./dist/area52-perishable-network.bna --card PeerAdmin@hlfv1
+  925  ls dist/composer archive create  --sourceType dir --sourceName . -a ./dist/perishable-network.bna
+  926  composer archive create  --sourceType dir --sourceName . -a ./dist/perishable-network.bna
+  927  composer card list
+  928  composer network install --help
+  929  composer network install -a dist/perishable-network.bna -c PeerAdmin@hlfv1
+  930  composer network start --help
+  931  composer network list
+  932  composer network list -c PeerAdmin@hlfv1
+  933  composer archive list --help
+  934  composer archive list -a dist/perishable-network.bna 
+  935  composer archive list -a dist/perishable-network.bna 
+  936  composer netowrk start --networkName perishable-network -V 0.2.6 -A admin -S adminpw -c PeerAdmin@hlfv1 --file networkadmin.card 
+  937  composer networkk start --networkName perishable-network -V 0.2.6 -A admin -S adminpw -c PeerAdmin@hlfv1 --file networkadmin.card 
+  938  composer network start --help
+  939  composer network start -n perishable-network -V 0.2.6 -A admin -S adminpw -c PeerAdmin@hlfv1 -f networkadmin.card
+  940  composer card list
+  941  composer card import --help
+  942  composer card import -f networkadmin.card -c PeerAdmin@hlfv1
+  943  composer networkk start --networkName perishable-network -V 0.2.6 -A admin -S adminpw -c PeerAdmin@hlfv1 --file networkadmin.card 
+  944  composer network start -n perishable-network -V 0.2.6 -A admin -S adminpw -c PeerAdmin@hlfv1 -f networkadmin.card
+  945  composer network ping --help
+  946  composer network ping -c networkadmin.card 
+  947  composer card import -f networkadmin.card
+  948  composer network ping -c admin@perishable-network
+  949  history 
+  950  composer-rest-server
+  951  pwd
+  952  ls
+  953  history >> command-history.txt 

@@ -1,0 +1,18 @@
+# create an archive  @returns perishable-network.bna
+composer archive create  --sourceType dir --sourceName . -a ./dist/perishable-network.bna
+
+# check archive created
+composer archive list -a dist/perishable-network.bna 
+
+# install to Fabric
+composer network install -a dist/perishable-network.bna -c PeerAdmin@hlfv1
+
+composer network list -c PeerAdmin@hlfv1
+
+composer archive list -a dist/perishable-network.bna 
+
+composer netowrk start --networkName perishable-network -V 0.2.6 -A admin -S adminpw -c PeerAdmin@hlfv1 --file networkadmin.card 
+composer network start -n perishable-network -V 0.2.6 -A admin -S adminpw -c PeerAdmin@hlfv1 -f networkadmin.card
+
+composer-rest-server
+
