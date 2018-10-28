@@ -39,22 +39,25 @@ asset Car identified by vin{
   o CarStatus carStatus 
 }
 
-asset FSDealerContract identified by fsDealerContract{
-  o String fsDealerContract
+asset FSDealerContract identified by fsDealerContractId{
+  o String fsDealerContractId
   --> FinanceSource financeSource
   --> Dealer dealer
+  o Double amountPaidToDealer
 }
 
-asset FSCustomerContract identified by fsCustomerContract{
-  o String fsCustomerContract
+asset FSCustomerContract identified by fsCustomerContractId{
+  o String fsCustomerContractId
   --> FinanceSource financeSource
   --> Customer customer
+  o Double amountPaidToFS
 }
 
-asset FSRouteoneContract identified by fsDealerContract{
-  o String fsDealerContract
+asset FSRouteoneContract identified by fsDealerContractId{
+  o String fsDealerContractId
   --> FinanceSource financeSource
   --> Routeone routeone
+  o Double amountPaidToRouteone
 }
 
 /**
