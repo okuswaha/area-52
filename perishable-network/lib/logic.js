@@ -98,6 +98,20 @@ async function setupDemo(setupDemo) {  // eslint-disable-line no-unused-vars
     const factory = getFactory();
     const NS = 'com.routeone.area52';
     console.log('A Car was added to Registry');
+
+    const financeSource = fsAddsCarToDealerInventory.fsDealerContract.financeSource
+    const dealer = fsAddsCarToDealerInventory.fsDealerContract.dealer
+
+    financeSource.accountBalance -= 200;
+    dealer.accountBalance += 200;
+
+    // update the finance source's balance
+    const financeSourceRegistry = await getParticipantRegistry(NS+'.FinanceSource');
+    await financeSourceRegistry.update(financeSource);
+
+    // update the importer's balance
+    const dealerRegistry = await getParticipantRegistry(NS + '.Dealer');
+    await dealerRegistry.update(contract.dealer);
   }
   
   /**
@@ -110,6 +124,21 @@ async function setupDemo(setupDemo) {  // eslint-disable-line no-unused-vars
     const factory = getFactory();
     const NS = 'com.routeone.area52';
     console.log('A Customer is approved for loan');
+
+    const financeSource = customerSubscribed.fsRouteoneContract.financeSource
+    const routeone = customerSubscribed.fsRouteoneContract.routeone
+
+    financeSource.accountBalance -= 15;
+    routeone.accountBalance += 15;
+
+    // update the finance source's balance
+    const financeSourceRegistry = await getParticipantRegistry(NS+'.FinanceSource');
+    await financeSourceRegistry.update(financeSource);
+
+    // update the Routeone's balance
+    const routeoneRegistry = await getParticipantRegistry(NS + '.Routeone');
+    await routeoneRegistry.update(routeone);
+
   }
   
   /**
@@ -122,6 +151,20 @@ async function setupDemo(setupDemo) {  // eslint-disable-line no-unused-vars
     const factory = getFactory();
     const NS = 'com.routeone.area52';
     console.log('customer pays a subscription fee');
+
+    const financeSource = customerPaysSubscriptionFee.fsCustomerContract.financeSource
+    const customer = customerPaysSubscriptionFee.fsCustomerContract.customer
+
+    financeSource.accountBalance += 1000;
+    customer.accountBalance -= 1000;
+
+    // update the finance source's balance
+    const financeSourceRegistry = await getParticipantRegistry(NS+'.FinanceSource');
+    await financeSourceRegistry.update(financeSource);
+
+    // update the importer's balance
+    const customerRegistry = await getParticipantRegistry(NS + '.Customer');
+    await customerRegistry.update(customer);
   }
   
   /**
@@ -134,6 +177,15 @@ async function setupDemo(setupDemo) {  // eslint-disable-line no-unused-vars
     const factory = getFactory();
     const NS = 'com.routeone.area52';
     console.log('customer rents a car');
+
+    const car = customerRentsCar.car;
+    if(car.carStatus == 'AVAILABLE'){
+        car.carStatus = 'NOT_AVAILABLE';
+        // update the importer's balance
+        const carRegistry = await getAssetRegistry(NS + '.Car');
+        await carRegistry.update(car);
+
+    }
   }
   
   /**
@@ -146,6 +198,15 @@ async function setupDemo(setupDemo) {  // eslint-disable-line no-unused-vars
     const factory = getFactory();
     const NS = 'com.routeone.area52';
     console.log('customer returns a car');
+
+    const car = customerReturnsCar.car;
+    if(car.carStatus == 'NOT_AVAILABLE'){
+        car.carStatus = 'AVAILABLE';
+        // update the importer's balance
+        const carRegistry = await getAssetRegistry(NS + '.Car');
+        await carRegistry.update(car);
+
+    }
   }
   
   
