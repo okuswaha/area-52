@@ -26,6 +26,9 @@ participant Customer extends Business {
 participant Dealer extends Business {
 }
 
+participant Routeone extends Business {
+}
+
 enum CarStatus {
   o AVAILABLE
   o NOT_AVAILABLE
@@ -36,23 +39,51 @@ asset Car identified by vin{
   o CarStatus carStatus 
 }
 
+asset FSDealerContract identified by fsDealerContract{
+  o String fsDealerContract
+  --> FinanceSource financeSource
+  --> Dealer dealer
+}
+
+asset FSCustomerContract identified by fsCustomerContract{
+  o String fsCustomerContract
+  --> FinanceSource financeSource
+  --> Customer customer
+}
+
+asset FSRouteoneContract identified by fsDealerContract{
+  o String fsDealerContract
+  --> FinanceSource financeSource
+  --> Routeone routeone
+}
+
 /**
  * JUST FOR INITIALIZING A DEMO
  */
 transaction SetupDemo {
 }
 
-transaction AddCarToRegisty {
+transaction FSAddsCarToDealerInventory {
+  --> FSDealerContract fsDealerContract
+  --> Car car
 }
 
-transaction CustomerCreditApproved {
+transaction CustomerSubscribed {
+  --> FSRouteoneContract fsRouteoneContract
 }
 
-transaction PaySubscriptionFee {
+transaction CustomerPaysSubscriptionFee {
+  --> FSCustomerContract fsCustomerContract
 }
 
-transaction RentCar {
+transaction CustomerRentsCar {
+  --> Customer customer
+  --> Dealer dealer
+  --> Car car
 }
 
-transaction ReturnCar {
+transaction CustomerReturnsCar {
+  --> Customer customer
+  --> Dealer dealer
+  --> Car car
 }
