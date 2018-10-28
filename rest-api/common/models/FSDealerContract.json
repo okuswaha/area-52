@@ -1,0 +1,49 @@
+{
+  "name": "FSDealerContract",
+  "description": "An asset named FSDealerContract",
+  "plural": "FSDealerContract",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "composer": {
+      "type": "asset",
+      "namespace": "com.routeone.area52",
+      "name": "FSDealerContract",
+      "fqn": "com.routeone.area52.FSDealerContract",
+      "abstract": false
+    }
+  },
+  "properties": {
+    "$class": {
+      "type": "string",
+      "default": "com.routeone.area52.FSDealerContract",
+      "required": false,
+      "description": "The class identifier for this type"
+    },
+    "fsDealerContractId": {
+      "type": "string",
+      "id": true,
+      "description": "The instance identifier for this type",
+      "required": true
+    },
+    "financeSource": {
+      "type": "any",
+      "description": "The identifier of an instance of financeSource",
+      "required": true
+    },
+    "dealer": {
+      "type": "any",
+      "description": "The identifier of an instance of dealer",
+      "required": true
+    },
+    "amountPaidToDealer": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

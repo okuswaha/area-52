@@ -1,0 +1,39 @@
+{
+  "name": "FinanceSource",
+  "description": "A participant named FinanceSource",
+  "plural": "FinanceSource",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "composer": {
+      "type": "participant",
+      "namespace": "com.routeone.area52",
+      "name": "FinanceSource",
+      "fqn": "com.routeone.area52.FinanceSource",
+      "abstract": false
+    }
+  },
+  "properties": {
+    "$class": {
+      "type": "string",
+      "default": "com.routeone.area52.FinanceSource",
+      "required": false,
+      "description": "The class identifier for this type"
+    },
+    "email": {
+      "type": "string",
+      "id": true,
+      "description": "The instance identifier for this type",
+      "required": true
+    },
+    "accountBalance": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

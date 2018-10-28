@@ -1,0 +1,43 @@
+{
+  "name": "Car",
+  "description": "An asset named Car",
+  "plural": "Car",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "composer": {
+      "type": "asset",
+      "namespace": "com.routeone.area52",
+      "name": "Car",
+      "fqn": "com.routeone.area52.Car",
+      "abstract": false
+    }
+  },
+  "properties": {
+    "$class": {
+      "type": "string",
+      "default": "com.routeone.area52.Car",
+      "required": false,
+      "description": "The class identifier for this type"
+    },
+    "vin": {
+      "type": "string",
+      "id": true,
+      "description": "The instance identifier for this type",
+      "required": true
+    },
+    "carStatus": {
+      "type": "string",
+      "enum": [
+        "AVAILABLE",
+        "NOT_AVAILABLE"
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Dealer",
+  "description": "A participant named Dealer",
+  "plural": "Dealer",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "composer": {
+      "type": "participant",
+      "namespace": "com.routeone.area52",
+      "name": "Dealer",
+      "fqn": "com.routeone.area52.Dealer",
+      "abstract": false
+    }
+  },
+  "properties": {
+    "$class": {
+      "type": "string",
+      "default": "com.routeone.area52.Dealer",
+      "required": false,
+      "description": "The class identifier for this type"
+    },
+    "email": {
+      "type": "string",
+      "id": true,
+      "description": "The instance identifier for this type",
+      "required": true
+    },
+    "accountBalance": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

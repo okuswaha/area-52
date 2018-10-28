@@ -1,0 +1,49 @@
+{
+  "name": "FSCustomerContract",
+  "description": "An asset named FSCustomerContract",
+  "plural": "FSCustomerContract",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "composer": {
+      "type": "asset",
+      "namespace": "com.routeone.area52",
+      "name": "FSCustomerContract",
+      "fqn": "com.routeone.area52.FSCustomerContract",
+      "abstract": false
+    }
+  },
+  "properties": {
+    "$class": {
+      "type": "string",
+      "default": "com.routeone.area52.FSCustomerContract",
+      "required": false,
+      "description": "The class identifier for this type"
+    },
+    "fsCustomerContractId": {
+      "type": "string",
+      "id": true,
+      "description": "The instance identifier for this type",
+      "required": true
+    },
+    "financeSource": {
+      "type": "any",
+      "description": "The identifier of an instance of financeSource",
+      "required": true
+    },
+    "customer": {
+      "type": "any",
+      "description": "The identifier of an instance of customer",
+      "required": true
+    },
+    "amountPaidToFS": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

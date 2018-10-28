@@ -1,0 +1,39 @@
+{
+  "name": "Customer",
+  "description": "A participant named Customer",
+  "plural": "Customer",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "composer": {
+      "type": "participant",
+      "namespace": "com.routeone.area52",
+      "name": "Customer",
+      "fqn": "com.routeone.area52.Customer",
+      "abstract": false
+    }
+  },
+  "properties": {
+    "$class": {
+      "type": "string",
+      "default": "com.routeone.area52.Customer",
+      "required": false,
+      "description": "The class identifier for this type"
+    },
+    "email": {
+      "type": "string",
+      "id": true,
+      "description": "The instance identifier for this type",
+      "required": true
+    },
+    "accountBalance": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

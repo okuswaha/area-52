@@ -1,0 +1,49 @@
+{
+  "name": "FSRouteoneContract",
+  "description": "An asset named FSRouteoneContract",
+  "plural": "FSRouteoneContract",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "composer": {
+      "type": "asset",
+      "namespace": "com.routeone.area52",
+      "name": "FSRouteoneContract",
+      "fqn": "com.routeone.area52.FSRouteoneContract",
+      "abstract": false
+    }
+  },
+  "properties": {
+    "$class": {
+      "type": "string",
+      "default": "com.routeone.area52.FSRouteoneContract",
+      "required": false,
+      "description": "The class identifier for this type"
+    },
+    "fsDealerContractId": {
+      "type": "string",
+      "id": true,
+      "description": "The instance identifier for this type",
+      "required": true
+    },
+    "financeSource": {
+      "type": "any",
+      "description": "The identifier of an instance of financeSource",
+      "required": true
+    },
+    "routeone": {
+      "type": "any",
+      "description": "The identifier of an instance of routeone",
+      "required": true
+    },
+    "amountPaidToRouteone": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
