@@ -33,7 +33,7 @@ async function setupDemo(setupDemo) {  // eslint-disable-line no-unused-vars
     // create FSCustomerContract
     const fsCustomerContract = factory.newResource(NS, 'FSCustomerContract', 'FS_CUSTOMER_001');
     fsCustomerContract.financeSource = factory.newRelationship(NS,'FinanceSource','financesource@email.com');
-    fsCustomerContract.dealer = factory.newRelationship(NS,'Customer','customer@email.com');
+    fsCustomerContract.customer = factory.newRelationship(NS,'Customer','customer@email.com');
     fsCustomerContract.amountPaidToFS = 1000;
 
     // create FSRouteoneContract
