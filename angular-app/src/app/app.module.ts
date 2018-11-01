@@ -37,6 +37,10 @@ import { CustomerSubscribedComponent } from './CustomerSubscribed/CustomerSubscr
 import { CustomerPaysSubscriptionFeeComponent } from './CustomerPaysSubscriptionFee/CustomerPaysSubscriptionFee.component';
 import { CustomerRentsCarComponent } from './CustomerRentsCar/CustomerRentsCar.component';
 import { CustomerReturnsCarComponent } from './CustomerReturnsCar/CustomerReturnsCar.component';
+import { LoginComponent } from './login/login.component';
+import { CredentialsEditorComponent } from './credentials-editor/credentials-editor.component';
+import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
+import { ProfileEditorNewComponent } from './profile-editor-new/profile-editor-new.component';
 
   @NgModule({
   declarations: [
@@ -55,7 +59,11 @@ import { CustomerReturnsCarComponent } from './CustomerReturnsCar/CustomerReturn
     CustomerSubscribedComponent,
     CustomerPaysSubscriptionFeeComponent,
     CustomerRentsCarComponent,
-    CustomerReturnsCarComponent
+    CustomerReturnsCarComponent,
+    LoginComponent,
+    CredentialsEditorComponent,
+    ProfileEditorComponent,
+    ProfileEditorNewComponent
   ],
   imports: [
     BrowserModule,

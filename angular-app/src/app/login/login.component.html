@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+			<label> User Name</label>
+			<div>
+				<input type="text" [formControl]="username">
+			</div>
+			<button (click)="updateUsername()">Update Username</button>
+			<label>Password </label>
+			<div>
+				<input type="password" [formControl]="password">
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<span>username : {{username.value	}}</span>
+			<span>password : {{password.value	}}</span>
+		</div>
+
+	</div>
+</div>

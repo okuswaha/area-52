@@ -18,54 +18,65 @@
         <p class="navbar-brand">angular-app</p>
       </div>
       <ul class="nav navbar-nav">
+				<li class="dropdown active">
+					<a class="dropdown-toggle" data-toggle="dropdown">Login</a>
+					<ul class="dropdown-menu scrollable-menu">
+
+						<li><a [routerLink]="['/Login']">Login</a></li>
+						<li><a [routerLink]="['/CredentialsEdit']">CredentialsEdit</a></li>
+						<li><a [routerLink]="['/ProfileEditor']">ProfileEditor</a></li>
+						<li><a [routerLink]="['/ProfileEditorNew']">ProfileEditorNew</a></li>
+
+					</ul>
+				</li>
         <li class="dropdown active">
             <a class="dropdown-toggle" data-toggle="dropdown">Assets</a>
             <ul class="dropdown-menu scrollable-menu">
-              
+
               <li><a [routerLink]="['/Car']">Car</a></li>
-              
+
               <li><a [routerLink]="['/FSDealerContract']">FSDealerContract</a></li>
-              
+
               <li><a [routerLink]="['/FSCustomerContract']">FSCustomerContract</a></li>
-              
+
               <li><a [routerLink]="['/FSRouteoneContract']">FSRouteoneContract</a></li>
-              
+
             </ul>
         </li>
         <li class="dropdown active">
           <a class="dropdown-toggle" data-toggle="dropdown">Participants</a>
           <ul class="dropdown-menu scrollable-menu">
-            
+
             <li><a [routerLink]="['/FinanceSource']">FinanceSource</a></li>
-            
+
             <li><a [routerLink]="['/Customer']">Customer</a></li>
-            
+
             <li><a [routerLink]="['/Dealer']">Dealer</a></li>
-            
+
             <li><a [routerLink]="['/Routeone']">Routeone</a></li>
-            
+
           </ul>
       </li>
       <li class="dropdown active">
         <a class="dropdown-toggle" data-toggle="dropdown">Transactions</a>
         <ul class="dropdown-menu scrollable-menu">
-          
+
           <li><a [routerLink]="['/SetupDemo']">SetupDemo</a></li>
-          
+
           <li><a [routerLink]="['/FSAddsCarToDealerInventory']">FSAddsCarToDealerInventory</a></li>
-          
+
           <li><a [routerLink]="['/CustomerSubscribed']">CustomerSubscribed</a></li>
-          
+
           <li><a [routerLink]="['/CustomerPaysSubscriptionFee']">CustomerPaysSubscriptionFee</a></li>
-          
+
           <li><a [routerLink]="['/CustomerRentsCar']">CustomerRentsCar</a></li>
-          
+
           <li><a [routerLink]="['/CustomerReturnsCar']">CustomerReturnsCar</a></li>
-          
+
         </ul>
     </li>
       </ul>
     </div>
   </nav>
-  
+
   <router-outlet></router-outlet>

@@ -33,6 +33,10 @@ import { CustomerSubscribedComponent } from './CustomerSubscribed/CustomerSubscr
 import { CustomerPaysSubscriptionFeeComponent } from './CustomerPaysSubscriptionFee/CustomerPaysSubscriptionFee.component';
 import { CustomerRentsCarComponent } from './CustomerRentsCar/CustomerRentsCar.component';
 import { CustomerReturnsCarComponent } from './CustomerReturnsCar/CustomerReturnsCar.component';
+import { LoginComponent } from './login/login.component';
+import {CredentialsEditorComponent} from './credentials-editor/credentials-editor.component';
+import {ProfileEditorComponent} from './profile-editor/profile-editor.component';
+import {ProfileEditorNewComponent} from './profile-editor-new/profile-editor-new.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -50,6 +54,10 @@ const routes: Routes = [
   { path: 'CustomerPaysSubscriptionFee', component: CustomerPaysSubscriptionFeeComponent },
   { path: 'CustomerRentsCar', component: CustomerRentsCarComponent },
   { path: 'CustomerReturnsCar', component: CustomerReturnsCarComponent },
+  { path: 'Login', component: LoginComponent },
+  { path: 'CredentialsEdit', component: CredentialsEditorComponent },
+  { path: 'ProfileEditor', component: ProfileEditorComponent },
+  { path: 'ProfileEditorNew', component: ProfileEditorNewComponent },
   { path: '**', redirectTo: '' }
 ];
 
